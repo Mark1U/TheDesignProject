@@ -1,0 +1,307 @@
+/* .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  } */
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0B0C17;
+    width: 100vw;
+}
+
+header {
+    height: 100vh
+}
+
+.logo {
+    position: fixed;
+    height: 25px;
+    top: 22px;
+    left: 22px;
+    z-index: 2;
+}
+
+.ilu1 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50vw;
+}
+
+.person {
+    position: absolute;
+    right: 0vw;
+    top: -20vh;
+    width: 50vw;
+    animation: shake 2s infinite alternate;
+}
+
+@keyframes shake {
+    100% {
+        transform: translateY(20px)
+    }
+}
+
+nav {
+    margin: 10px 60px;
+}
+
+nav div {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #0B0C17;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 600;
+    margin-top: 20vh;
+    width: 38vw;
+}
+
+.container {
+    padding: 20px 10vw;
+}
+
+.txt1 p {
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.sub {
+    width: 38vw;
+}
+
+.scroll {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FF3571;
+}
+
+.album {
+    width: 100vw;
+    height: 65vw;
+}
+
+.album img {
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
+
+.idea {
+    display: flex;
+    justify-content: space-between;
+    justify-items: left;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.idea h2 img {
+    width: 40px;
+}
+
+.idea h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45.6px;
+    color: #000;
+}
+
+.idea h2::after {
+    background-image: image('');
+}
+
+.idea p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+    color: #000;
+    width: 50vw;
+}
+
+.idented {
+    /* text-align: center; */
+    width: 450px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.sec3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    margin-bottom: 100px;
+    gap: 60px;
+}
+
+.bp {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.bp img {
+    width: 36px;
+    margin-top: 10px;
+}
+
+/* 
+.sec3 div::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("../img/title01.svg") no-repeat 0px 0px fixed;
+    top: 47px;
+    left: -50px;
+    position: relative;
+    display: inline-block;
+} */
+
+.sec3 h3 {
+    font-size: 18.72px;
+    font-weight: 700;
+    line-height: 21.94px;
+    text-align: left;
+    color: #000;
+}
+
+.sec3 p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    color: #000;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: center;
+    color: #000;
+}
+
+
+h5 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+    color: #000;
+ 
+}
+
+
+.sec4 {
+    text-align: center;
+}
+
+.sec4 p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18.2px;
+    text-align: center;
+    color: #000;
+    width: 400px;
+    margin: 0 auto 100px auto;
+}
+
+
+.step-left-img {
+    display: flex;
+    justify-content: space-between;
+    justify-items: left;
+    align-items: center;
+    margin-bottom: 100px;
+    /* gap: 4vw; */
+}
+
+.step-left {
+    width: 32vw;
+}
+
+.step-left-img h2 {
+    color: #ddd;
+}
+
+.step-right {
+    width: 36vw;
+}
+
+.step-icon{
+    width: 20px;
+    margin-top: 55px;
+}
+
+.cta p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18.2px;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto 50px auto;
+}
+
+.email {
+    margin: 0 auto 20px auto;
+    /* width: 400px; */
+}
+
+.email input {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: center;
+    height: 55px;
+    width: 460px;
+    margin: auto;
+    display: block;
+    /* padding: 25px 150px; */
+}
+
+input[type=submit] {
+    font-family: Arial;
+    font-size: 19.2px;
+    font-weight: 400;
+    line-height: 22.08px;
+    text-align: center;
+    background-color: #FF3571;
+    color: white;
+    width: 280px;
+    height: 55px;
+    border-radius: 4px;
+    border: 0px solid black;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+
+input[type=submit]:hover {
+    background: rgb(218, 38, 110);
+    background: linear-gradient(90deg, rgba(218, 38, 110, 1) 0%, rgba(141, 29, 179, 1) 50%, rgba(59, 26, 226, 1) 100%);
+}
